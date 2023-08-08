@@ -9,7 +9,7 @@ function Login() {
         </div>
         <div className="mt-8 mx-auto w-full max-w-md px-4">
           <div className="bg-white py-8 px-4 shadow-md rounded-lg sm:px-10">
-            <form className="space-y-6">
+            <form className="space-y-6 text-left">
               <div>
                 <label
                   htmlFor="name"
@@ -23,6 +23,7 @@ function Login() {
                     type="text"
                     name="name"
                     required
+                    placeholder="John Doe"
                     className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
                   />
                 </div>
@@ -36,6 +37,7 @@ function Login() {
                 </label>
                 <div className="mt-1">
                   <input
+                    id="phone-number"
                     type="text"
                     name="phone-number"
                     required
@@ -43,6 +45,23 @@ function Login() {
                     className="block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
                   />
                 </div>
+              </div>
+              <div>
+                <label
+                  htmlFor="table-number"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Table Number
+                </label>
+                <select
+                  id="table-number"
+                  name="table-number"
+                  className="mt-1 block w-full bg-slate-100 text-gray-700 rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                >
+                  <option>Table 1</option>
+                  <option>Table 2</option>
+                  <option>Table 3</option>
+                </select>
               </div>
 
               <div>
